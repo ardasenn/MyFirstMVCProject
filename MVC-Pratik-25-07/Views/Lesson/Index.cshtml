@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewData["Title"] = "Dersler Sayfası";
+}
+
+
+@model IEnumerable<Lesson> ;
+
+
+
+<div class="row">
+    <div class="col-lg-4 offset-lg-4">   
+         <div style="margin-bottom:5px">
+          <a asp-action="Create" asp-controller="Lesson"  class="btn btn-outline-info ">  Ders Ekle </a>
+
+       </div> 
+       
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Ders Adı</th>
+                        <th>Ne zaman Oluşturuldu</th>
+                                              
+
+                    </tr>
+                </thead>
+                <tbody>
+                  
+                    @foreach (var item in Model)
+                    {
+                    <tr>                       
+                        <td>@item.Id</td>
+                        <td>@item.Name</td>
+                        <td>@item.CreationTime</td>                            
+                        <td> <a asp-action="Update" asp-controller="Lesson"class="btn btn-outline-info" asp-route-id="@item.Id"> Update</a></td>
+                        <td> <a asp-action="Delete" asp-controller="Lesson"class="btn btn-outline-info" asp-route-id="@item.Id"> Delete</a> 
+                            </td>
+
+                        
+                    </tr>  
+                  
+                    }
+                    
+                </tbody>
+            </table>
+    </div>
+    <div>
+        @if (@ViewBag.Message !=null)
+       {
+           @ViewBag.Message
+       }
+    </div>
+</div>
+
