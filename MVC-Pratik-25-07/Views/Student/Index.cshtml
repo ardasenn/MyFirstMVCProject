@@ -5,48 +5,20 @@
     ViewData["Title"] = "Öğrenciler Sayfası";
 }
 
-@model IEnumerable<Student> ;
 
-<div class="row">
-    <div class="col-lg-4 offset-lg-4">   
-        <div style="margin-bottom:5px">
-          <a asp-action="Create" asp-controller="Student"  class="btn btn-outline-info ">  Öğrenci Ekle </a>
 
-       </div>        
-      
-            <table class="table table-bordered table-hover">
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Öğrenci Adı</th>
-                        <th>Öğrenci sınıfı</th>
-                        <th>OkulID</th>
-                        <th>Okul adı</th>
-                        <th>Ders adı</th>
-                        <th>İşlem tipi</th>
+<div style="margin-bottom:5px">
+    <a  class="btn btn-outline-info " onclick="GetCreateTable()">  Öğrenci Ekle </a>
 
-                    </tr>
-                </thead>
-                <tbody>
-                  
-                    @foreach (var item in Model)
-                    {
-                    <tr>
-                        <td>@item.Id</td>
-                        <td>@item.Name</td>
-                        <td>@item.Class</td>
-                        <td>@item.SchoolID</td>
-                        <td>@item.School.Name</td>
-                        <td>Dersler ekelencek bir ara</td>                      
-                        
-                        <td> <a asp-action="Update" asp-controller="Student" class="btn btn-outline-info" asp-route-id="@item.Id">Update</a></td>
-                        <td> <a asp-action="Delete" asp-controller="Student" class="btn btn-outline-info" asp-route-id="@item.Id">Delete</a></td>
-                         <td> <a asp-action="AddLesson" asp-controller="Student"class="btn btn-outline-info" asp-route-id="@item.Id"> Ders Ekle</a></td>
-                    </tr>  
-                  
-                    }
-                    
-                </tbody>
-            </table>
-    </div>
+</div>
+
+
+<div id="sayfa" style="display:flex">
+
+<div id="tables" >
+    <div id="Create" style="width:20vw"></div>
+    <div id="Update"></div>
+    <div id="AddLesson"></div>
+</div>
+<div id="list"></div>
 </div>

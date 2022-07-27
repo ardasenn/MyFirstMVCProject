@@ -11,6 +11,7 @@ namespace MVC_Pratik_25_07.Models
             Schools = new List<School>();
             Lessons = new List<Lesson>();
         }
+       // public int StudentID { get; set; }
         public Student Student { get; set; }
         public IEnumerable<School> Schools { get; set; }
         public int LessonID { get; set; }

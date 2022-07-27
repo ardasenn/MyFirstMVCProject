@@ -21,9 +21,7 @@ D:\ARDA D\Arda\YAZILIM\Boost\MVC\MVC-Pratik-25-07\MVC-Pratik-25-07\obj\Debug\net
 D:\ARDA D\Arda\YAZILIM\Boost\MVC\MVC-Pratik-25-07\MVC-Pratik-25-07\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 D:\ARDA D\Arda\YAZILIM\Boost\MVC\MVC-Pratik-25-07\MVC-Pratik-25-07\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 D:\ARDA D\Arda\YAZILIM\Boost\MVC\MVC-Pratik-25-07\MVC-Pratik-25-07\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
-D:\ARDA D\Arda\YAZILIM\Boost\MVC\MVC-Pratik-25-07\MVC-Pratik-25-07\obj\Debug\net5.0\Razor\Views\Student\Create.cshtml.g.cs
 D:\ARDA D\Arda\YAZILIM\Boost\MVC\MVC-Pratik-25-07\MVC-Pratik-25-07\obj\Debug\net5.0\Razor\Views\Student\Index.cshtml.g.cs
-D:\ARDA D\Arda\YAZILIM\Boost\MVC\MVC-Pratik-25-07\MVC-Pratik-25-07\obj\Debug\net5.0\Razor\Views\Student\Update.cshtml.g.cs
 D:\ARDA D\Arda\YAZILIM\Boost\MVC\MVC-Pratik-25-07\MVC-Pratik-25-07\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
 D:\ARDA D\Arda\YAZILIM\Boost\MVC\MVC-Pratik-25-07\MVC-Pratik-25-07\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
 D:\ARDA D\Arda\YAZILIM\Boost\MVC\MVC-Pratik-25-07\MVC-Pratik-25-07\obj\Debug\net5.0\MVC-Pratik-25-07.RazorTargetAssemblyInfo.cache
@@ -152,4 +150,7 @@ D:\ARDA D\Arda\YAZILIM\Boost\MVC\MVC-Pratik-25-07\MVC-Pratik-25-07\obj\Debug\net
 D:\ARDA D\Arda\YAZILIM\Boost\MVC\MVC-Pratik-25-07\MVC-Pratik-25-07\obj\Debug\net5.0\MVC-Pratik-25-07.genruntimeconfig.cache
 D:\ARDA D\Arda\YAZILIM\Boost\MVC\MVC-Pratik-25-07\MVC-Pratik-25-07\obj\Debug\net5.0\ref\MVC-Pratik-25-07.dll
 D:\ARDA D\Arda\YAZILIM\Boost\MVC\MVC-Pratik-25-07\MVC-Pratik-25-07\obj\Debug\net5.0\Razor\Views\School\Create.cshtml.g.cs
-D:\ARDA D\Arda\YAZILIM\Boost\MVC\MVC-Pratik-25-07\MVC-Pratik-25-07\obj\Debug\net5.0\Razor\Views\Student\AddLesson.cshtml.g.cs
+D:\ARDA D\Arda\YAZILIM\Boost\MVC\MVC-Pratik-25-07\MVC-Pratik-25-07\obj\Debug\net5.0\Razor\Views\Student\_CreatePartial.cshtml.g.cs
+D:\ARDA D\Arda\YAZILIM\Boost\MVC\MVC-Pratik-25-07\MVC-Pratik-25-07\obj\Debug\net5.0\Razor\Views\Student\_AddLessonPartial.cshtml.g.cs
+D:\ARDA D\Arda\YAZILIM\Boost\MVC\MVC-Pratik-25-07\MVC-Pratik-25-07\obj\Debug\net5.0\Razor\Views\Student\_UpdatePartial.cshtml.g.cs
+D:\ARDA D\Arda\YAZILIM\Boost\MVC\MVC-Pratik-25-07\MVC-Pratik-25-07\obj\Debug\net5.0\Razor\Views\Student\_GetListPartial.cshtml.g.cs

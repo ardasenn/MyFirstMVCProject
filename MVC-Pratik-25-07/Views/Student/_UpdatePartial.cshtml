@@ -9,40 +9,45 @@
 
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Update" asp-route-id="@Model.Student.Id">
+       
             <div class="form-group">
-                <label asp-for="Student.Name" class="contol-label"></label>
-                <input asp-for="Student.Name" class="form-control"/>
+                <label  class="contol-label"></label>
+                <input id="NameUpdate" class="form-control"/>
 
             </div>
 
             <div class="form-group">
-                <label asp-for="Student.Class" class="contol-label"></label>
-                <input asp-for="Student.Class" class="form-control"/>
+                <label  class="contol-label"></label>
+                <input id="ClassUpdate" class="form-control"/>
 
             </div>
-            <select asp-for="Student.SchoolID" class="form-control">
+            <select id="SchoolIDUpdate" class="form-control">
                 @foreach (var item in Model.Schools)
                 {
                     <option value="@item.Id">@item.Name</option>
                 }
             </select>
             <br />
-          
             <br />
              <div style="margin-top:40px" class="form-group">
                
-                <input type="submit" value="Update" class="btn btn-primary"/>
+                <input  value="Update" class="btn btn-primary" onclick="UpdateStudentAJ(@Model.Student.Id)"/>
 
             </div>
+            <div class="form-group">
 
-        </form>
+            <input value="Alanı Kapat" class="btn btn-primary" onclick="CloseUpdataTable()" />
+
+        </div>
+        
+        <div class="form-group" id="bildiri">
+
+            
+
+        </div>
+        
 
     </div>
-
-</div>
-<div style="margin-bottom:5px">
-    <a asp-action="Index" class="btn btn-outline-info "> Back to list</a>
 
 </div>
 

@@ -9,13 +9,13 @@
 
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="AddLesson" asp-route-id="@Model.Student.Id">
+        
             <div class="form-group">
-                <label asp-for="Student.Name" class="contol-label"></label>         
+                <label  class="contol-label">@Model.Student.Name</label>         
             </div>
              <br />
             
-            <select asp-for="LessonID" class="form-control">
+            <select id="LessonID" class="form-control">
                 @foreach (var item in Model.Lessons)
                 {
                     <option value="@item.Id">@item.Name</option>
@@ -26,19 +26,26 @@
             <br />
              <div style="margin-top:40px" class="form-group">
                
-                <input type="submit" value="Ekle" class="btn btn-primary"/>
+                <input onclick="AddLesson(@Model.Student.Id)" value="Ekle" class="btn btn-primary"/>
 
             </div>
 
-        </form>
+        
+         <div class="form-group">
 
+            <input value="Alanı Kapat" class="btn btn-primary" onclick="CloseAddLessonTable()" />
+
+        </div>
+        
+        <div class="form-group" id="bildiri">
+
+            
+
+        </div>
     </div>
 
 </div>
-<div style="margin-bottom:5px">
-    <a asp-action="Index" class="btn btn-outline-info "> Back to list</a>
 
-</div>
 
 @if(ViewBag.Message !=null){
     <div class="alert alert-danger" role="alert">  @ViewBag.Message</div>

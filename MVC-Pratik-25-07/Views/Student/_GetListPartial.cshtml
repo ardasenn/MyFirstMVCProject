@@ -1,0 +1,45 @@
+﻿
+
+
+@model IEnumerable<Student> ;
+
+    <h3>Öğrenciler Listesi </h3>
+
+<div class="row">
+    <div class="col-lg-4 offset-lg-4">   
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Öğrenci Adı</th>
+                        <th>Öğrenci sınıfı</th>
+                        <th>OkulID</th>
+                        <th>Okul adı</th>
+                        <th>Ders adı</th>
+                        <th>İşlem tipi</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                  
+                    @foreach (var item in Model)
+                    {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Name</td>
+                        <td>@item.Class</td>
+                        <td>@item.SchoolID</td>
+                        <td>@item.School.Name</td>
+                        <td>Dersler ekelencek bir ara</td>                      
+                        
+                        <td> <a onclick="GetUpdateTable(@item.Id)" class="btn btn-outline-info" >Update</a></td>
+                        <td> <a  class="btn btn-outline-info" onclick="DeleteStudent(@item.Id)">Delete</a></td>
+                         <td> <a  class="btn btn-outline-info" onclick="GetAddLessonTable(@item.Id)"> Ders Ekle</a></td>
+                    </tr>  
+                  
+                    }
+                    
+                </tbody>
+            </table>
+    </div>
+</div>

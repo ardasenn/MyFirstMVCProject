@@ -1,0 +1,66 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Create Student";
+}
+@model StudentWithSchoolsVM
+
+<h1>Create Student</h1>
+<br />
+<div asp-validation-summary="All" class="alert-danger">
+</div>
+
+<br />
+
+
+<div class="row">
+    <div class="col-md-4">
+
+        <div class="form-group">
+            <label class="contol-label"></label>
+            <input id="NameCreate" class="form-control" />
+
+
+        </div>
+
+        <div class="form-group">
+            <label class="contol-label"></label>
+            <input id="ClassCreate" class="form-control" />
+
+
+        </div>
+        <select id="SchoolIdCreate" class="form-control">
+            @foreach (var item in Model.Schools)
+            {
+                <option value="@item.Id">@item.Name</option>
+            }
+        </select>
+
+        <div style="margin-top:10px" class="form-group">
+
+            <input value="Gönder" class="btn btn-primary" onclick="AddStudentAJ()" />
+
+        </div>
+
+        <div class="form-group">
+
+            <input value="Alanı Kapat" class="btn btn-primary" onclick="CloseCreateTable()" />
+
+        </div>
+
+        <div class="form-group" id="bildiri">
+
+            
+
+        </div>
+
+    </div>
+
+</div>
+
+
+@if (ViewBag.Message != null)
+{
+    <div class="alert alert-danger" role="alert">  @ViewBag.Message</div>
+}
